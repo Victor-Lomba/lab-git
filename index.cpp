@@ -16,6 +16,12 @@ int FibIndex(int index){
 	return n1;
 }
 
+int SomaSimples(int sequencia_fib, int somador){
+    int soma= sequencia_fib + somador;
+
+    return soma;
+}
+
 void meu_strcat (char v1[], char v2[])
 {
 string s1, s2;
@@ -25,12 +31,16 @@ s1 = s1+s2;
 strcpy(v1, s1.c_str());
 }
 
+
 main(){
 	//teste fib
-	cout << FibIndex(8);//deve retornar 21
-	
-	
-	char V1[256], V2[256];
+	cout << FibIndex(8)<< endl;//deve retornar 21
+
+    int sequencia_fib= FibIndex(8);
+
+    cout<< SomaSimples(sequencia_fib, 1); //deve retornar 22
+    
+    char V1[256], V2[256];
 	string S1, S2;
 	S1 = "\nCEFET";
 	S2 = "/RJ";
